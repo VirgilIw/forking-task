@@ -42,6 +42,13 @@ import fakhri from "./tasks/fakhri/index.js";
  * Task "Virgil I Ambar"
  */
 
-import { calcTotal, belanja } from "./tasks/virgil/calculateAllPrice.js";
+import virgil from "./tasks/virgil/index.js";
 
-calcTotal(belanja);
+(function taskVirgil() {
+  try {
+    const calculate = virgil.calcTotal(virgil.belanja);
+    console.log(calculate);
+  } catch (error) {
+    console.log(error.message);
+  }
+});
