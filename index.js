@@ -3,6 +3,7 @@
  */
 
 import fakhri from "./tasks/fakhri/index.js";
+import { countLetters } from "./tasks/virgil/counteletters.js";
 
 // Use IIFE here
 (function taskFakhri() {
@@ -47,6 +48,12 @@ import virgil from "./tasks/virgil/index.js";
 (function taskVirgil() {
   try {
     const calculate = virgil.calcTotal(["apel", "pisang", "apel"]);
+    console.log(calculate);
+  } catch (error) {
+    console.log(error.message);
+  }
+  try {
+    const calculate = virgil.countLetters("virgil");
     console.log(calculate);
   } catch (error) {
     console.log(error.message);
