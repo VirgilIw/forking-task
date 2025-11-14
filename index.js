@@ -46,9 +46,9 @@ import virgil from "./tasks/virgil/index.js";
 
 (function taskVirgil() {
   try {
-    const calculate = virgil.calcTotal(virgil.belanja);
+    const calculate = virgil.calcTotal(["apel", "pisang", "apel"]);
     console.log(calculate);
   } catch (error) {
     console.log(error.message);
   }
-});
+})();
